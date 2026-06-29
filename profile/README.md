@@ -10,10 +10,15 @@ Small, fast, and practical self-hosted projects focused on AI-native workflows, 
 
 | Project | Description | Stack | License | Status |
 |---------|-------------|-------|---------|--------|
-| **[hiai-docs](https://github.com/HiAi-gg/hiai-docs)** | The lightest AI-native self-hosted knowledge vault. Automatic RAG with Ollama + pgvector, TipTap v3 rich editor, semantic search, and clean REST API for agents. | Bun + SvelteKit + Elysia + Drizzle + PostgreSQL | MIT | Active |
-| **[hiai-opencode](https://github.com/HiAi-gg/hiai-opencode)** | 14-agent OpenCode plugin that turns regular OpenCode into a powerful multi-agent development environment. MCP tools, browser automation, design systems, and Postgres helpers. | — | MIT | Active |
-| **[hiai-observe](https://github.com/HiAi-gg/hiai-observe)** | Lightweight all-in-one observability dashboard. Docker stats, logs, errors, uptime, and AI tracing — all in a single container. | TypeScript | MIT | Active |
-| **[hiai-ui](https://github.com/HiAi-gg/hiai-ui)** | Shared Svelte component library and design system used across HiAi projects. | Svelte | MIT | In progress |
+| **[hiai-docs](https://github.com/HiAi-gg/hiai-docs)** | The most mature and complete project. The lightest AI-native self-hosted knowledge vault with automatic RAG (Ollama + pgvector), TipTap v3 rich editor, hybrid semantic search, and clean REST API for agents. | Bun + SvelteKit + Elysia + Drizzle + PostgreSQL + pgvector | MIT | **Active** (most complete) |
+| **[hiai-observe](https://github.com/HiAi-gg/hiai-observe)** | Lightweight all-in-one observability platform. Errors, uptime, Docker stats, logs, and AI tracing — all in a single container. Excellent alternative to Sentry + Uptime Kuma + Dozzle. | Bun + Svelte + Elysia + PostgreSQL | MIT | **Active** |
+| **[hiai-bobcode](https://github.com/HiAi-gg/hiai-bobcode)** | Main AI coding agent. 10-agent team (with Bob as orchestrator), memory, design awareness, parallel task execution, and rich set of skills. | Bun + TypeScript + SolidJS | MIT | **Active** |
+| **[hiai-opencode](https://github.com/HiAi-gg/hiai-opencode)** | 14-agent OpenCode plugin (predecessor of Bobcode). Turns regular OpenCode into a powerful multi-agent development environment with MCP tools, browser automation and design systems. | HTML + TypeScript | MIT | **Development paused** |
+| **[hiai-admin](https://github.com/HiAi-gg/hiai-admin)** | Admin panel and dashboard for managing the HiAi ecosystem. | Svelte + Bun | MIT | **Beta** |
+| **[hiai-ui](https://github.com/HiAi-gg/hiai-ui)** | Core design system and UI component library (shadcn-svelte + tokens) for the entire HiAi ecosystem. | Svelte + Tailwind | MIT | **Active** (design foundation) |
+| **[hiai-kit](https://github.com/HiAi-gg/hiai-kit)** | Opinionated starter kit for building production-ready AI agents (Mastra + memory + observability). | Bun + Mastra + SvelteKit + PostgreSQL | MIT | **Alpha** |
+| **[hiai-post](https://github.com/HiAi-gg/hiai-post)** | AI-powered content generation and multi-platform publishing (social networks). | Bun + SvelteKit + Elysia + PostgreSQL | MIT | **Alpha** |
+| **[hiai-store](https://github.com/HiAi-gg/hiai-store)** | Multi-tenant e-commerce module (storefront + merchant admin, Stripe, shipping). | Bun + SvelteKit + Elysia + PostgreSQL | MIT | **Alpha** |
 
 ---
 
@@ -21,12 +26,12 @@ Small, fast, and practical self-hosted projects focused on AI-native workflows, 
 
 All projects follow the same principles:
 - Minimal resource usage
-- Strong focus on local AI (embeddings, RAG)
-- Clean APIs for agent integration
+- Strong focus on local-first AI (embeddings, RAG, pgvector)
+- Clean APIs and MCP integrations for agent workflows
 - Full self-hosting and data ownership
-- MIT license — free to use, modify, and build upon
+- MIT License — free to use, modify, and build upon
 
-Most of the development happens together with my AI agents (Bob, Amigo, Ava and others) sharing long-term memory.
+Most development happens together with AI agents (Bob and others) sharing long-term memory.
 
 ---
 
