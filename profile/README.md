@@ -2,7 +2,7 @@
 
 **Practical open-source tools for AI-native software and agent workflows.**
 
-HiAi builds focused tools for working with AI agents: shared knowledge, multi-agent development, portable plugins, observability, and reusable application infrastructure.
+HiAi builds focused tools for working with AI agents: shared knowledge, portable plugins, observability, and a shared UI kit.
 
 Most projects are designed to stay small, understandable, self-hostable, and easy to connect through APIs, MCP, and CLI tools.
 
@@ -15,7 +15,6 @@ Most projects are designed to stay small, understandable, self-hostable, and eas
 | Project | Description | License | Status |
 |---|---|---|---|
 | **[DocsMint](https://github.com/HiAi-gg/docsmint)** | Self-hosted AI-native knowledge workspace for people, applications, and agents. Rich editing, automatic embeddings, multilingual hybrid search, GraphRAG, REST API, TypeScript SDK, CLI, and MCP server. | Apache-2.0 | **Active** |
-| **[hiai-opencode](https://github.com/HiAi-gg/hiai-opencode)** | Multi-agent engineering team for OpenCode. An orchestrator coordinates specialist agents for planning, implementation, review, research, design, and browser-based verification with enforced quality gates. | MIT | **Active** |
 | **[hiai-observe](https://github.com/HiAi-gg/hiai-observe)** | Lightweight all-in-one observability for applications and AI agents: errors, uptime, infrastructure, logs, OpenTelemetry, Sentry-compatible ingest, LLM tracing, MCP, CLI, and SDK. | MIT | **Active** |
 
 ---
@@ -34,12 +33,11 @@ Learn more about the portable format at **[agent-plugins.org](https://agent-plug
 
 ---
 
-## Shared Application Infrastructure
+## Shared UI
 
 | Project | Description | License | Status |
 |---|---|---|---|
 | **[hiai-ui](https://github.com/HiAi-gg/hiai-ui)** | Shared Svelte design system, tokens, primitives, and reusable application components used across HiAi products. | MIT | **Maintained** |
-| **[hiai-admin](https://github.com/HiAi-gg/hiai-admin)** | Reusable SaaS control-plane and application dashboard for tenant management, authentication, billing, analytics, integrations, and site access. | MIT | **Beta** |
 
 ---
 
@@ -49,7 +47,7 @@ These repositories remain available as open source, but are not currently under 
 
 | Project | Description | License | Status |
 |---|---|---|---|
-| **[hiai-post](https://github.com/HiAi-gg/hiai-post)** | AI-assisted social content planning, generation, scheduling, and publishing platform. | MIT | **Frozen** |
+| **[hiai-opencode](https://github.com/HiAi-gg/hiai-opencode)** | Multi-agent plugin for OpenCode 1.x. Frozen after OpenCode 2.0: 1.x plugins do not load, and this package is not ported. Last release 0.6.6. | MIT | **Frozen** |
 | **[hiai-store](https://github.com/HiAi-gg/hiai-store)** | Multi-tenant e-commerce platform with storefront, merchant administration, checkout, payments, shipping, and product infrastructure. | MIT | **Frozen** |
 
 ---
@@ -58,7 +56,7 @@ These repositories remain available as open source, but are not currently under 
 
 | Project | Description | License | Status |
 |---|---|---|---|
-| **[hiai-bobcode](https://github.com/HiAi-gg/hiai-bobcode)** | Former standalone multi-agent coding environment. Development moved back to the plugin architecture in **hiai-opencode**. | MIT | **Archived** |
+| **[hiai-bobcode](https://github.com/HiAi-gg/hiai-bobcode)** | Former standalone multi-agent coding environment. Superseded by **hiai-opencode**, which is frozen on the OpenCode 1.x plugin API. | MIT | **Archived** |
 
 ---
 
